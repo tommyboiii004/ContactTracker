@@ -41,6 +41,7 @@ export default function Root() {
             </div>
             <div id="detail">
                 <Outlet />
+
             </div>
         </>
     );
