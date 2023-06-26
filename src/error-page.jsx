@@ -1,21 +1,16 @@
 import { useRouteError } from "react-router-dom";
 
-import React from 'react'
-
-const errorPage = () => {
-
+export default function ErrorPage() {
     const error = useRouteError();
-    console.error(error)
+    console.error(error);
 
     return (
         <div id="error-page">
             <h1>Oops!</h1>
-            <p>This was not meant to occur.</p>
+            <p>Sorry, This is not meant to occur.</p>
             <p>
                 <i>{error.statusText || error.message}</i>
             </p>
         </div>
-    )
+    );
 }
-
-export default errorPage
