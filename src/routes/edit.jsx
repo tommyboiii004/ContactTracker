@@ -53,6 +53,7 @@ export default function EditContact() {
                 <span>Notes</span>
                 <textarea
                     name="notes"
+                    placeholder="Something regarding the contact..."
                     defaultValue={contact.notes}
                     rows={6}
                 />
